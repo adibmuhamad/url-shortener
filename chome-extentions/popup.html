@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="materialize.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>URL Shortener</title>
+    </head>
+<body>
+    <div class="container">
+        <h1 class="center-align">URL Shortener</h1>
+        <div class="input-field">
+            <input id="title" type="text">
+            <label for="title">Title</label>
+            <span id="title-validation-message" class="red-text"></span>
+        </div>
+        <div class="input-field">
+            <input id="tags" type="text">
+            <label for="tags">Tags (comma-separated)</label>
+        </div>
+        <div class="input-field">
+            <input id="destination-url" type="url">
+            <label for="destination-url">Destination URL</label>
+            <span id="destination-validation-message" class="red-text"></span>
+        </div>
+        <div class="input-field">
+            <input id="back-half" type="text" maxlength="10">
+            <label for="back-half">Back-Half</label>
+            <span id="back-half-validation-message" class="red-text"></span>
+        </div>
+        <div id="shortened-link">Shortened URL: http://localhost:8080/</div>  
+        <button id="generate" class="btn waves-effect waves-light orange">Generate Shortened URL<i class="material-icons right">send</i></button>
+        <button id="save" class="btn waves-effect waves-light green" style="display: none;">Save Shortened URL<i class="material-icons right">save</i></button>
+        <span id="error-message" class="red-text"></span>
+        <button id="copy" class="btn waves-effect waves-light yellow" style="display: none;">Copy Shortened URL<i class="material-icons right">content_copy</i></button>
+    </div>
+    <script src="materialize.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

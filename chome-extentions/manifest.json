@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "URL Shortener",
+  "version": "1.0",
+  "description": "A simple url shortener extension",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "64": "icon64.png",
+      "128": "icon128.png"
+    }
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "popup.js"
+      ]
+    }
+  ]
+}
