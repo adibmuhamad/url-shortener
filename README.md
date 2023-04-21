@@ -1,5 +1,7 @@
 # URL Shortener
 
+![Example](screenshot.png)
+
 Simple URL shortener that contains Go REST URL Shortener API and Chrome Extention.
 
 ## Contributing
